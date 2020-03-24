@@ -51,6 +51,9 @@ pipeline {
                                              otherFiles          : "**/*.png,**/*.jpg",
                                            ]
                                         )
+
+                                        chuckNorris()
+
                                       }
                            }
                        }
