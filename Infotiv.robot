@@ -1,10 +1,13 @@
-<<<<<<< HEAD
 *** Settings ***
 Documentation   This is some basic info about the whole test suite
 Library         SeleniumLibrary
 Resource        ../Resources/keywords.robot
 Test Setup        Open Browser                            about:blank            ${BROWSER}
 Test Teardown     Close Browser
+
+*** Variables ***
+${BROWSER} =     chrome
+${URL} =      http://rental5.infotiv.net
 
 *** Test Cases ***
 User may create a user account
@@ -45,6 +48,3 @@ User is allowed for Date Selection
      Given browser is opend to select date
      When press the selected date
      Then press"Continue"to should reserve a car
-=======
-
->>>>>>> badc16de9c332447e97a4e7e5f33e9f2d5b5b5b9
