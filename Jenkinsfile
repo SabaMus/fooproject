@@ -31,7 +31,7 @@ pipeline {
                     }
                 }
              }
-             stage('robot') {
+             stage('Robot') {
                        steps {
                            sh 'robot --variable BROWSER:headlesschrome Infotiv.robot'
                        }
@@ -50,18 +50,21 @@ pipeline {
                                              unstableThreshold   : 40,
                                              otherFiles          : "**/*.png,**/*.jpg",
                                            ]
-                                        )
-
+                                         )
                                         chuckNorris()
 
+                                         }
                                       }
-                           }
-                       }
-                }
-           }
-        }
-        post {
-                always {
-                        junit '**/*xml'
-                    }
-                }
+                                    }
+                                  }
+                                }
+                               post {
+                               always {
+                                        junit '**/TEST*.xml'
+                                           emailext attachLog: true, attachmentsPattern: '**/TEST*xml',
+                                            body: 'Bod-DAy!', recipientProviders: [culprits()], subject:
+                                         '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!'
+                                   }
+                              }
+
+                          }
