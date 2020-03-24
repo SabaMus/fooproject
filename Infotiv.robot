@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation   This is some basic info about the whole test suite
 Library         SeleniumLibrary
-Resource        ../Resources/keywords.robot
 
 *** Variables ***
 ${BROWSER} =     chrome
