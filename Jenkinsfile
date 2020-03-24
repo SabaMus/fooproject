@@ -3,18 +3,19 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/xxxxxxx/mavenfooproject.git'
+                git 'https://github.com/SabaMus/fooproject.git'
             }
         }
-    }
-}
-stage('newman') {
+
+    stage('newman') {
             steps {
-                sh 'newman run Restful_Booker.postman_collection.json --Restful_Booker.postman_environment.json --reporters junit'
+                sh 'newman run Restful_Booker_Facit.postman_collection.json --environment Restful_Booker.postman_environment.json --reporters junit'
             }
             post {
                 always {
                         junit '**/*xml'
                     }
                 }
+             }
+           }
         }
