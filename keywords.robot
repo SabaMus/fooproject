@@ -1,4 +1,3 @@
-
 *** Settings ***
 Library         SeleniumLibrary
 *** Variables ***
@@ -44,4 +43,3 @@ press the selected date
 
 press"Continue"to should reserve a car
     Click Button                 //*[@id="continue"]
-
