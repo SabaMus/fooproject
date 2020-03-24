@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *** Settings ***
 Documentation   This is some basic info about the whole test suite
 Library         SeleniumLibrary
@@ -44,3 +45,6 @@ User is allowed for Date Selection
      Given browser is opend to select date
      When press the selected date
      Then press"Continue"to should reserve a car
+=======
+
+>>>>>>> badc16de9c332447e97a4e7e5f33e9f2d5b5b5b9
