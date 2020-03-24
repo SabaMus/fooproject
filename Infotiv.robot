@@ -5,10 +5,6 @@ Resource        ../Resources/keywords.robot
 Test Setup        Open Browser                            about:blank            ${BROWSER}
 Test Teardown     Close Browser
 
-*** Variables ***
-${BROWSER} =     chrome
-${URL} =      http://rental5.infotiv.net
-
 *** Test Cases ***
 User may create a user account
     [Documentation]                         This is some basic info about the test
