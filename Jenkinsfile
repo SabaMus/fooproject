@@ -31,7 +31,7 @@ pipeline {
                     }
                 }
              }
-             stage('Robot') {
+             stage('robot') {
                        steps {
                            sh 'robot --variable BROWSER:headlesschrome Infotiv.robot'
                        }
