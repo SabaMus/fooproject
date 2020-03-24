@@ -31,7 +31,7 @@ pipeline {
                     }
                 }
              }
-             stage('Robot Framework System tests with Selenium') {
+             stage('Robot') {
                        steps {
                            sh 'robot --variable BROWSER:headlesschrome Infotiv.robot'
                        }
