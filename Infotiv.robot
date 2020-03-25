@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation   This is some basic info about the whole test suite
-Library         SeleniumLibrary
-Resource        ../Resources/keywords.robot
-Test Setup        Open Browser                            about:blank            ${BROWSER}
+Library     SeleniumLibrary
+Resource    keywords.robot
+Test Setup        Open Browser       about:blank     ${BROWSER}
 Test Teardown     Close Browser
 
 *** Test Cases ***

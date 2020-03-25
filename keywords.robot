@@ -12,9 +12,9 @@ Go to Web Page
     Load Page
     Verify Page Loaded
 Load Page
-        Go to                http://rental5.infotiv.net
+     Go to                http://rental5.infotiv.net
 Verify Page Loaded
-       Wait Until Page Contains                Infotiv Car Rental
+   Wait Until Page Contains                Infotiv Car Rental
 create a user account
    Click element                            //*[@id="createUser"]
 
@@ -31,7 +31,7 @@ reset button
   click element                   //*[@id="continue"]
 
 End Web Test
-    Close Browser
+   Close Browser
 
 browser is opend to select date
     Go to Web Page
