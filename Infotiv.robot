@@ -7,9 +7,9 @@ Test Teardown     Close Browser
 
 *** Test Cases ***
 User may create a user account
-    [Documentation]                         This is some basic info about the test
-    [Tags]                                  Test 1
-    Go To                                    ${URL}
+    [Documentation]                 This is some basic info about the test
+    [Tags]                          Test 1
+    Go To                            ${URL}
     Wait Until Page Contains        Infotiv Car Rental
     create a user account
 
@@ -25,7 +25,7 @@ User is required to input start and end dates for the trip
 User can access infotiv.net
     [Documentation]                 This is some basic information about the test
     [Tags]                          Test 3
-    Go to                            ${URL}
+    Go to                           ${URL}
     Wait Until Page Contains        Infotiv Car Rental
     Enter Search Term
 
