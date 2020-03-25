@@ -1,6 +1,4 @@
-
 *** Settings ***
-Library         SeleniumLibrary
 Library         SeleniumLibrary
 *** Variables ***
 ${BROWSER} =     chrome
@@ -8,8 +6,7 @@ ${URL} =      http://rental5.infotiv.net
 
 *** Keywords ***
 Begin Web Test
-    Open Browser        about:blank  ${BROWSER}
-    Maximize Browser Window
+    Open Browser        about:blank chrome
 
 Go to Web Page
     Load Page
@@ -46,5 +43,3 @@ press the selected date
 
 press"Continue"to should reserve a car
     Click Button                 //*[@id="continue"]
-
-
