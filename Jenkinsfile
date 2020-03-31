@@ -31,7 +31,7 @@ pipeline {
                     }
                 }
              }
-             pipeline {
+             stage{
                  agent any
                  stages {
              	stage('Launch launcher') {
@@ -40,8 +40,7 @@ pipeline {
                     }
              	  }
                  }
-
-                 post {
+                  post {
                      always {
                          junit '**/TEST*.xml'
                          emailext attachLog: true, attachmentsPattern: '**/TEST*xml',
